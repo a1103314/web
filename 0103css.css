@@ -1,0 +1,67 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*從這開始*/
+
+.box{
+    width: 2048px;
+    height: 2048px;/*如果要讓他自動延伸就不要設定寬高*/
+    background-image: url(img/112.jpg);/*把圖片設為背景(url後面是路徑)，圖片上面就可以加文字內容*/
+    background-repeat: no-repeat;/*如果圖比較小的部分*/
+    /*background-repeat: repeat-x///重複圖片補滿橫向;*/
+    /*border-color: #fff;///圖片如果重複豔色變的奇怪就可以使用這個設定顏色，讓延伸的被眼顏色不會那麼奇怪*/
+    /*background-position: right bottom;///如果圖片大小小於設定的區塊大小，讓圖片出現在指定的區塊位置(也可以用px和%數來指定位置)*/
+    /*也可以用background: url()... no...把四行整理到一行*/
+}
+
+.box h2{
+    color: #fff;
+    font-size: 36px;
+    text-align: center;/*文字置中*/
+}

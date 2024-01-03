@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}/*css reset*/
+
+/*開始自己寫*/
+h1{
+    color: #000;
+    font-size: 13px;/*大小*/
+    border-bottom: 5px solid blue;
+    background: gray;/*背景顏色*/
+    width: 300px;/*寬*/
+    height: 30px;/*長*/
+    display: inline;/*改成行內元素*/
+}
+
+a:hover{
+    color: red;/*擬態*/
+}
+a:active{
+    color: pink;/*按住不放*/
+}
+
+a{
+    display: block;/*改成區塊元素，可以改寬高，且整個區塊都能選擇*/
+}
+
+.style1{
+    color: rebeccapurple;/*類別選擇器,自訂名稱*/
+}
+
+p{
+    font-size: 16px;
+    font-family: Verdana;/*設定字形*/
+    line-height: 1.5;/*行距(倍數或px)*/
+    text-align: right;/*靠邊*/
+    text-indent: 32px;/*首行縮排*/
+    text-decoration: underline;/*下底線*/
+    text-decoration: line-through;/*刪除線*/
+    letter-spacing: 2px;/*字距*/
+}
+
+h2{
+    border: 10px solid blue;/*框線:粗細 線條類型(dashed,dotted) 顏色*/
+}
+
+/*下面是div*/
+.aaa{
+    padding: 10px;/*向內推(後面也是可以選擇只往哪邊推，和margin一樣，且會算入本身大小*/
+}
+.aaa p{
+    color: #000;/*選擇器aaa裡的p類別設定*/
+    margin: 10px;/*向外推(上下左右全推)，如果只要推其中一邊則在後面加-bottom/top/right/left，但是不會加入本身大小*/
+}
+
+.aaa .content{
+    font-weight: bold;/*字體加粗*/
+}
+
+.wrap{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;/*區塊本身水平置中*/
+}
+
+.footer{
+    text-align: center;/*區塊內文字置中*/
+}
+
+.container{
+    display: flex;/*讓區塊內的區塊並排*/
+    margin: 0 auto;/*區塊置中*/
+    padding: 10px;
+    flex-direction: row;/*正常*/
+    /*flex-direction: row-reverse;右至左*/
+    /*flex-direction: column;上至下*/
+    /*flex-direction: column-reverse;下至上*/
+    /*justify-content: flex-start;預設，起點對齊*/
+    justify-content: center;/*居中對齊*/
+    /*justify-content: flex-end;終點對齊*/
+    /*justify-content: space-around;適當留白對齊*/
+    /*justify-content: space-between;適當留白貼齊對齊*/
+    flex-wrap: wrap;/*自動換行屬性*/
+    align-items: center;/*交錯籌對齊*/
+}
